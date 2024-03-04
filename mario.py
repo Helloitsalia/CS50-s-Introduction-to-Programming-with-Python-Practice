@@ -28,7 +28,8 @@ def main():
 
 def pyramid(n):
     for i in range(n):
-        print("#"* i)
+        # print(i, end=" ")
+        print("#" * i )
 
 if _name_ =="_main_":
     main()
