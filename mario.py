@@ -6,17 +6,29 @@
 
 # main()
 
-def main():
-    print_square(3)
+# def main():
+#     print_square(3)
 
-def print_square(size):
-    for i in range(size):
-        # for j in range(size):
-        #     print("#", end="")
-        print_row(size)
+# def print_square(size):
+#     for i in range(size):
+#         # for j in range(size):
+#         #     print("#", end="")
+#         print_row(size)
 
 
-def print_row(width):
-    print("#" * width)
+# def print_row(width):
+#     print("#" * width)
     
-main()
+# main()
+
+def main():
+    height = int(input("height:"))
+    pyramid(height)
+
+
+def pyramid(n):
+    for i in range(n):
+        print("#"* i)
+
+if _name_ =="_main_":
+    main()
