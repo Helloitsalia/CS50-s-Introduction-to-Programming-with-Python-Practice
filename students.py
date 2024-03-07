@@ -7,6 +7,24 @@
 
 
 # 2nd version
+# student = []
+
+
+# with open("students.cvs") as file:
+#     for line in file:
+#         name, house = line.rstrip().split(",")
+#         student = {"name": name, "house": house}
+#         students.apped(student)
+
+# def get_name(student):
+#     return student["name"]
+
+# for student in sorted (students, key=get_name, reverse=True):
+#     print(f"{student['name']} is in {student['house']}")
+        
+
+# 3th version
+
 student = []
 
 
@@ -16,9 +34,6 @@ with open("students.cvs") as file:
         student = {"name": name, "house": house}
         students.apped(student)
 
-def get_name(student):
-    return student["name"]
 
-for student in sorted (students, key=get_name, reverse=True):
+for student in sorted (students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['house']}")
-        
