@@ -20,10 +20,10 @@
 names = []
 
 with open("names.txt") as file
-    for line file:
+    for line in file:
         names.apped(line.rstrip())
 
-for name in sorted(names):
+for name in sorted(names, reverse=True):
     print(f"hello, {name}")
 
     
